@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import "./Header.css";
+import logo from "../assets/images/logo.png";
 
 function Header(props) {
   return (
     <nav className="nav-bar">
       <p className="logo">
-        <img className="main-logo" src={props.PNGlogo} alt={props.logoName} />
+        <img className="main-logo" src={logo} alt="main-logo" />
       </p>
       <ul>
         <li>
