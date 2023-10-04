@@ -3,7 +3,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser"); //needed for form posting
 const router = require("./routes/router");
 const mongoose = require("mongoose");
-require("dotenv/config"); //gotta say config like that cause npm dotenv docs
+require("dotenv").config(); //gotta say config like that cause npm dotenv docs
 
 const app = express();
 
@@ -24,13 +24,13 @@ const dbOption = {
   useUnifiedTopology: true,
 };
 mongoose
-  .connect(Process.env.DB_URI, dbOption)
+  .connect(process.env.DB_URI, dbOption)
   .then(() => {
     console.log("Database Connected!");
   })
   .catch((err) => console.log(err));
 // const port = 4000;
-const port = Process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);
 });
