@@ -4,9 +4,11 @@ export default function Home() {
   return (
     <>
       {/* <Header PNGlogo={logo} logoName="logo name" /> */}
-      <h1 className="red">Come With Us</h1>
-      <p>
-        Hiking, Climbing, Surfing, Sking? We got you! One Stop Tour Solution
+      <div class="title">
+        <h1>Come With Us</h1>
+      </div>
+      <p className="main-p">
+        Hiking, Climbing, Surfing, Sking? We've got you! One Stop Tour Solution
       </p>
 
       {/* <Footer /> */}
