@@ -1,5 +1,5 @@
 import "./App.css";
-import Router from "./components/Router";
+// import Router from "./components/Router";
 import Router2 from "./components/Router2";
 import Context from "./components/Context";
 

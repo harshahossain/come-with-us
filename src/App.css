@@ -73,3 +73,59 @@
 .blue{
   color:blue;
 }
+
+.contactForm{
+  margin: 0 auto;
+  display: block;
+  width: 500px;
+  background-color: aliceblue;
+  padding: 40px;
+  border-radius: 20px;
+  opacity: 75%;
+  box-shadow: 1px 3px 10px 7px rgba(0,0,0,0.74);
+-webkit-box-shadow: 1px 3px 10px 7px rgba(0,0,0,0.74);
+-moz-box-shadow: 1px 3px 10px 7px rgba(0,0,0,0.74);
+}
+.contactForm label{
+  display: block;
+  width: 300px;
+  padding: 5px;
+  margin-top: 30px;
+}
+.contactForm input{
+  display: block;
+  width: 480px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid grey;
+}
+.contactForm textarea{
+  display: block;
+  width: 480px;
+  height: 100px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid grey;
+  resize: none;
+}
+.contactForm select{
+  display: block;
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1.5px solid grey;
+}
+.contactForm button{
+  display: block;
+  margin: 40px auto;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid royalblue;
+  color: royalblue;
+  background-color: aliceblue;
+  cursor: pointer;
+}
+.required{
+  color:red;
+}

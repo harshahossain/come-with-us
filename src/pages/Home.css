@@ -34,4 +34,18 @@
     width: 250px;
     
     border-radius: 20px;
+    cursor: pointer; 
+    transition: all 0.53s ease;
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.3s; 
+    -webkit-transition-timing-function: ease; 
+    box-shadow: 1px 3px 12px 7px rgba(0,0,0,0.74);
+-webkit-box-shadow: 1px 3px 12px 7px rgba(0,0,0,0.74);
+-moz-box-shadow: 1px 3px 12px 7px rgba(0,0,0,0.74);
+}
+
+.productImage:hover{
+    width:400px;
+    transform: scale(1.2);
+    box-shadow: none;
 }

@@ -29,11 +29,67 @@ export default function ProductDetails() {
       image: require("../assets/images/portable-powerbank.jpg"),
     };
   }
-  if (params.id === "158") {
+  if (params.id === "258") {
     productData = {
       name: "Running Shoes",
       price: "3299.00৳",
       image: require("../assets/images/running-shoes.jpg"),
+    };
+  }
+  if (params.id === "259") {
+    productData = {
+      name: "Skiboard",
+      price: "4099.00৳",
+      image: require("../assets/images/skiboard.jpg"),
+    };
+  }
+  if (params.id === "260") {
+    productData = {
+      name: "Climbing Hooks",
+      price: "1499.00৳",
+      image: require("../assets/images/climb-hook.jpg"),
+    };
+  }
+  if (params.id === "261") {
+    productData = {
+      name: "Surfboard",
+      price: "3499.00৳",
+      image: require("../assets/images/surfboard.jpg"),
+    };
+  }
+  if (params.id === "262") {
+    productData = {
+      name: "Googles",
+      price: "1199.00৳",
+      image: require("../assets/images/googles.jpg"),
+    };
+  }
+  if (params.id === "263") {
+    productData = {
+      name: "Headlamp",
+      price: "1299.00৳",
+      image: require("../assets/images/pocket-knife.jpg"),
+    };
+  }
+  if (params.id === "264") {
+    productData = {
+      name: "Tent",
+      price: "4999.00৳",
+      image: require("../assets/images/tent.jpg"),
+    };
+  }
+  if (params.id === "265") {
+    productData = {
+      name: "Bicycle",
+      price: "14999.00৳",
+      image: require("../assets/images/portable-cycle.jpg"),
+    };
+  }
+  if (params.id === "266") {
+    productData = {
+      name: "Climbing Ropes",
+      price: "699.00৳",
+      image: require("../assets/images/climbing-rope.jpg"),
     };
   }
 
