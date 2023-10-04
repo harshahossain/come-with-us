@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+// import { post } from "../../backend/routes/router";
 
 function Contact() {
   const [email, setEmail] = useState("");
@@ -41,14 +42,23 @@ function Contact() {
     // };
     await axios
       // .get("https://jsonplaceholder.typicode.com/users")
-      .get("https://jsonplaceholder.typicode.com/users")
+      .get("http://localhost:4000/users")
       // .then((res) => res.json())  //axios doesnt need to convert to json cause it gives json by default
       .then((res) => {
-        // .then((data) => {
-        //if (processing) setSelectData(data);
         if (processing) setSelectData(res.data);
       })
       .catch((err) => console.log(err));
+  };
+
+  const axiosPostData = async () => {
+    const postData = {
+      email: email,
+      website: selectValue,
+      message: message,
+    };
+    await axios
+      .post("http://localhost:4000/contact", postData)
+      .then((res) => setError(<p className="success">{res.data}</p>));
   };
 
   const handleSubmit = (evt) => {
@@ -66,6 +76,8 @@ function Contact() {
     console.log(
       `in submit handler the email is ${email}, selec value is ${selectValue}, message is ${message}`
     );
+    setError("");
+    axiosPostData(); //just why?
     setEmail("");
     setMessage("");
   };

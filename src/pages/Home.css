@@ -13,6 +13,9 @@
 .productBox a{
     color: aliceblue;
     text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: -3px 5px 3px rgba(0,0,0,0.6);
 }
 .productBox a:hover{
     color:aquamarine;
@@ -36,16 +39,75 @@
     border-radius: 20px;
     cursor: pointer; 
     transition: all 0.53s ease;
-    -webkit-transition-property: all; 
+    /* -webkit-transition-property: all; 
     -webkit-transition-duration: 0.3s; 
-    -webkit-transition-timing-function: ease; 
+    -webkit-transition-timing-function: ease;  */
     box-shadow: 1px 3px 12px 7px rgba(0,0,0,0.74);
--webkit-box-shadow: 1px 3px 12px 7px rgba(0,0,0,0.74);
--moz-box-shadow: 1px 3px 12px 7px rgba(0,0,0,0.74);
+    -webkit-box-shadow: 1px 3px 12px 7px rgba(0,0,0,0.74);
+    -moz-box-shadow: 1px 3px 12px 7px rgba(0,0,0,0.74);
 }
 
 .productImage:hover{
     width:400px;
     transform: scale(1.2);
     box-shadow: none;
+}
+
+
+
+/* the main p */
+.main-p{
+    color:rgb(9, 79, 160);
+    font-size:1.5rem;
+    font-family:'Lobster';
+    text-transform:capitalize;
+    text-align: center;
+    text-shadow: -4px 5px 4px rgba(0,0,0,0.41);
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+
+
+/* THE TITLE */
+
+.title {
+	font-family: "Cairo";
+	text-align: center;
+	color: #FFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	letter-spacing: 1px;
+    text-shadow: -3px 5px 3px rgba(0,0,0,0.6);
+}
+
+h1 {
+	background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	margin: auto;
+}
+/* styling my button */
+
+.white-mode {
+	text-decoration: none;
+	padding: 7px 10px;
+	background-color: #122;
+	border-radius: 3px;
+	color: #FFF;
+	transition: .35s ease-in-out;
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	font-family: "Montserrat";
+}
+
+.white-mode:hover {
+	background-color: #FFF;
+	color: #122;
 }

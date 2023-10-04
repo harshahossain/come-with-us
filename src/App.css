@@ -68,7 +68,7 @@
   width: 100%;;
 }
 .red{
-  color: red;
+  color: rgb(217, 255, 0);
 }
 .blue{
   color:blue;
@@ -127,5 +127,8 @@
   cursor: pointer;
 }
 .required{
-  color:red;
+  color:rgb(240, 29, 29);
+}
+.success{
+  color: rgb(37, 240, 64);
 }
