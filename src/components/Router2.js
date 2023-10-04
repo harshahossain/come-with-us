@@ -47,7 +47,8 @@ export default function Router2() {
       children: [
         { path: "/", element: <Home /> },
         { path: "/contact-us", element: <Contact /> },
-        { path: "/product/:id", element: <ProductDetails /> },
+        { path: "product", elemet: <ProductDetails /> },
+        { path: "product/:id", element: <ProductDetails /> },
       ],
     },
   ]);

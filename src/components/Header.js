@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./Header.css";
 import logo from "../assets/images/logo.png";
+import { useContext } from "react";
+import Context from "./Context";
 
-function Header(props) {
+function Header() {
+  const userData = useContext(Context);
   return (
     <nav className="nav-bar">
       <p className="logo">
@@ -15,6 +18,7 @@ function Header(props) {
         <li>
           <a href="/contact-us">Contact</a>
         </li>
+        <li style={{ color: "white" }}>Cart: {userData.cartItems}</li>
       </ul>
     </nav>
   );

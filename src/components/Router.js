@@ -15,11 +15,11 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom"; //this 
 
 //check router2 more a bit more cleaner code!
 
-export default function Router() {
+export default function Router(props) {
   const Layout = () => {
     return (
       <>
-        <Header />
+        <Header cartItems={props.cartItems} />
         <Outlet />
         <Footer />
       </>
