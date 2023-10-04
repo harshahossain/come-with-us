@@ -2,23 +2,38 @@ const express = require("express");
 const router = express.Router();
 const schemas = require("../models/schemas");
 
-router.post("/contact", async (req, res) => {
+router.post("/contact/:a", async (req, res) => {
   // const email=req.body.email;
   // const website=req.body.website;
   const { email, website, message } = req.body;
   //   console.log(email + " | " + website + " | " + message);
 
-  //pushing into our schema so it can push to db autoc
-  const contactData = { email: email, website: website, message: message };
-  const newContact = new schemas.Contact(contactData);
-  const saveContact = await newContact.save(); //since we are awaiting need to put async before req res
-  if (saveContact) {
-    res.send("Message sent.Thank You!");
+  const action = req.params.a;
+  switch (action) {
+    case "send":
+      //pushing into our schema so it can push to db autoc
+      const contactData = { email: email, website: website, message: message };
+      const newContact = new schemas.Contact(contactData);
+      const saveContact = await newContact.save(); //since we are awaiting need to put async before req res
+      if (saveContact) {
+        res.send("Message sent.Thank You!");
+      } else {
+        res.send("failed to send message");
+      }
+      break;
+    default:
+      res.send("Invalid Request");
+      break;
   }
   res.end();
 });
 
-router.get("/users", (req, res) => {
+router.get("/users", async (req, res) => {
+  //   const users = schemas.Users;
+  //   const userData = await users.find({}).exec();
+  //   if (userData) {
+  //     res.send(JSON.stringify(userData));
+  //   }
   const userData = [
     {
       id: 1,

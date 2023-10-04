@@ -12,7 +12,7 @@ function App() {
     name: "Icarus",
     email: "harshahossainzz@gmail.com",
     loggedIn: true,
-    cartItems: 4,
+    cartItems: 0,
   };
   return (
     <>
