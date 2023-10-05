@@ -1,7 +1,6 @@
 {
   "name": "for-portfolio",
   "version": "0.1.0",
-  "homepage":"https://harshahossain.github.io/come-with-us",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
